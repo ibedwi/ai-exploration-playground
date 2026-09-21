@@ -1,3 +1,7 @@
 packages:
   - "apps/*"
   - "packages/*"
+  # harness-app is a self-contained, polyglot sub-project (its Node backend will
+  # be swapped for FastAPI). It manages its own deps and installs with
+  # --ignore-workspace, so keep it out of the JS workspace.
+  - "!apps/harness-app"

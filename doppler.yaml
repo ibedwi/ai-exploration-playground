@@ -1,0 +1,11 @@
+setup:
+  # One Doppler project per app/service (Doppler's recommended monorepo pattern).
+  # Run `doppler setup` inside a directory below to link it, or `doppler setup --scope <dir>`.
+  - project: ai-playground-harness-app
+    config: dev
+    path: ./apps/harness-app
+
+  # Add more apps here as they gain secrets, e.g.:
+  # - project: ai-playground-web
+  #   config: dev
+  #   path: ./apps/web
